@@ -1,67 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Moushumi Sikdar - Data Analyst Portfolio</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Moushumi Sikdar – Data Analyst Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header class="hero">
+    <div class="hero-inner container">
+      <div>
+        <p class="overline">Portfolio</p>
+        <h1>Hi, I&rsquo;m <span class="accent">Moushumi Sikdar</span></h1>
+        <p class="tagline">Data Analyst | Python • SQL • Snowflake • Machine Learning</p>
+        <p class="hero-text">
+          I design data pipelines, build statistical and machine learning models, and turn complex datasets
+          into clear, actionable insights. My work spans anomaly detection, churn prediction, Bayesian ranking,
+          and end-to-end ETL workflows.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn ghost">Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </header>
 
-<header>
-  <h1>Moushumi Sikdar</h1>
-  <p>Data Analyst | Python • SQL • Snowflake • Machine Learning</p>
-  <a class="btn" href="#projects">View Projects</a>
-</header>
+  <main>
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div>
+          <h2>About Me</h2>
+          <p>
+            I am a data analyst with 3+ years of experience working with large-scale operational and customer datasets.
+            I specialise in building automated analytics solutions using Python, SQL, and Snowflake, with a strong focus
+            on data quality, reproducibility, and business impact.
+          </p>
+          <p>
+            My recent work includes detecting revenue anomalies across regions, modelling customer churn using survival
+            analysis, and building a Bayesian technician ranking framework to support fair performance decisions.
+            I enjoy collaborating with cross-functional teams and presenting complex analyses in a way that non-technical
+            stakeholders can easily understand.
+          </p>
+        </div>
+        <div class="highlight-card">
+          <h3>Profile Snapshot</h3>
+          <ul>
+            <li>3+ years in analytics and data-driven problem solving</li>
+            <li>Hands-on with Python, SQL, Snowflake, and ETL pipelines</li>
+            <li>Experience with survival analysis, Bayesian modelling, and forecasting</li>
+            <li>Comfortable working with distributed and remote teams</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-  I am a Data Analyst with 3+ years of experience in Python, SQL, Snowflake, ETL pipelines, 
-  and advanced statistical modeling. I specialize in transforming complex datasets into actionable insights 
-  through automation, machine learning, and reproducible analytics workflows.
-  </p>
-</section>
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Core</h3>
+            <p>Python, SQL, Git, Jupyter Notebook</p>
+          </div>
+          <div class="skill-card">
+            <h3>Data &amp; ML</h3>
+            <p>Pandas, NumPy, Scikit-learn, Regression, Gradient Boosting, Clustering, Survival Analysis, Bayesian Modelling, Forecasting</p>
+          </div>
+          <div class="skill-card">
+            <h3>Data Engineering</h3>
+            <p>ETL/ELT pipelines, Data modelling, SQL automation, Web scraping</p>
+          </div>
+          <div class="skill-card">
+            <h3>Data Platforms</h3>
+            <p>Snowflake (stages, file formats, COPY INTO), Postgres</p>
+          </div>
+          <div class="skill-card">
+            <h3>Visualisation</h3>
+            <p>Tableau, Matplotlib, Seaborn</p>
+          </div>
+          <div class="skill-card">
+            <h3>Collaboration</h3>
+            <p>Stakeholder communication, documentation, remote work</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section id="projects">
-  <h2>Projects</h2>
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Featured Projects</h2>
+        <p class="section-intro">
+          A selection of projects showcasing my experience in analytics, statistical modelling, and data engineering.
+        </p>
 
-  <div class="card">
-    <h3>Revenue Anomaly Detection System</h3>
-    <p>Automated real-time revenue anomaly detection using Python, SQL & statistical modeling.</p>
-  </div>
+        <article class="project-card">
+          <h3>Revenue Anomaly Detection System</h3>
+          <p class="project-meta">Python • SQL • Statistical Analysis</p>
+          <p>
+            Built an automated anomaly-detection framework to monitor weekly revenue across regions and identify
+            unusual patterns without manual checks.
+          </p>
+          <ul>
+            <li>Implemented IQR-based outlier detection on regional revenue time series to surface underperforming areas.</li>
+            <li>Automated data extraction and transformation using SQL, reducing manual monitoring effort.</li>
+            <li>Provided stakeholders with a repeatable process to quickly investigate and act on revenue issues.</li>
+          </ul>
+        </article>
 
-  <div class="card">
-    <h3>Customer Churn Prediction</h3>
-    <p>Applied survival analysis to model customer cancellation timelines and improve retention strategy.</p>
-  </div>
+        <article class="project-card">
+          <h3>Customer Churn Prediction with Survival Analysis</h3>
+          <p class="project-meta">Python • Survival Analysis • SQL</p>
+          <p>
+            Modelled time-to-cancellation for home warranty customers to support proactive retention strategies.
+          </p>
+          <ul>
+            <li>Applied survival-analysis techniques to estimate churn curves and identify higher-risk customer segments.</li>
+            <li>Combined transactional, tenure, and behavioural features into a structured modelling dataset.</li>
+            <li>Generated insights that informed targeted retention offers and prioritisation of outreach efforts.</li>
+          </ul>
+        </article>
 
-  <div class="card">
-    <h3>Bayesian Technician Ranking Model</h3>
-    <p>Developed a hierarchical Bayesian ranking model to produce fair and credible performance rankings.</p>
-  </div>
+        <article class="project-card">
+          <h3>Bayesian Technician Ranking Model</h3>
+          <p class="project-meta">Python • Bayesian Modelling • Hierarchical Statistics</p>
+          <p>
+            Developed a Bayesian hierarchical model to produce fair, uncertainty-aware rankings of technician performance.
+          </p>
+          <ul>
+            <li>Modelled technician-level profitability and success metrics while accounting for data sparsity and variance.</li>
+            <li>Generated posterior distributions for each technician, enabling comparison with credible intervals.</li>
+            <li>Delivered a ranking framework to support decisions on training, incentives, and workforce planning.</li>
+          </ul>
+        </article>
 
-  <div class="card">
-    <h3>ETL Pipeline for Parts Pricing</h3>
-    <p>Built a web scraping + Snowflake ingestion pipeline for competitive pricing insights.</p>
-  </div>
+        <article class="project-card">
+          <h3>ETL Pipeline for Parts Pricing</h3>
+          <p class="project-meta">Python • Web Scraping • Snowflake</p>
+          <p>
+            Designed an ETL workflow to collect and centralise appliance part prices from online sources for competitive analysis.
+          </p>
+          <ul>
+            <li>Scraped pricing data from publicly available websites, handling pagination and HTML variability.</li>
+            <li>Normalised and cleaned raw data in Python before loading into Snowflake.</li>
+            <li>Enabled downstream analysis of price dispersion and market positioning.</li>
+          </ul>
+        </article>
 
-  <div class="card">
-    <h3>Geospatial Business Feasibility Study</h3>
-    <p>Performed venue clustering using geospatial data to identify high-opportunity locations.</p>
-  </div>
+        <article class="project-card">
+          <h3>Geospatial Business Feasibility Study – Nice, France</h3>
+          <p class="project-meta">Python • Foursquare API • Geospatial Analysis</p>
+          <p>
+            Evaluated potential locations for a new business in Nice by analysing venue density, competition, and neighbourhood profiles.
+          </p>
+          <ul>
+            <li>Fetched and processed venue data using the Foursquare API for multiple neighbourhoods.</li>
+            <li>Used clustering to segment areas by venue composition and identify high-opportunity zones.</li>
+            <li>Visualised results on geospatial maps to support location selection decisions.</li>
+          </ul>
+        </article>
 
-</section>
+        <article class="project-card">
+          <h3>A/B Testing Analysis Framework</h3>
+          <p class="project-meta">Python • Statistics • Experimentation</p>
+          <p>
+            Created a reusable framework to evaluate A/B test performance and quantify the impact of new features or offers.
+          </p>
+          <ul>
+            <li>Automated calculation of lift, confidence intervals, and p-values for experiment groups.</li>
+            <li>Incorporated bootstrapping to better understand result stability and uncertainty.</li>
+            <li>Packaged the workflow into a repeatable script that can be applied to multiple experiments.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:rumie.mou@gmail.com">rumie.mou@gmail.com</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/sikdarmoushumi" target="_blank">sikdarmoushumi</a></p>
-  <p>GitHub: <a href="https://github.com/M-S8" target="_blank">M-S8</a></p>
-</section>
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="experience-card">
+          <h3>Data Analyst &mdash; Sears Home Services</h3>
+          <p class="project-meta">Data Analytics • Statistical Modelling • ETL</p>
+          <ul>
+            <li>Built analytics solutions for revenue monitoring, technician performance, and customer behaviour.</li>
+            <li>Developed Python and SQL scripts to automate data ingestion, cleaning, and reporting workflows.</li>
+            <li>Collaborated with business stakeholders to translate analytical findings into operational decisions.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-<footer>
-  <p>© 2025 Moushumi Sikdar • Portfolio Website</p>
-</footer>
+    <section id="contact" class="section">
+      <div class="container contact">
+        <div>
+          <h2>Contact</h2>
+          <p>
+            If you&rsquo;d like to discuss opportunities, collaborations, or projects, feel free to reach out.
+          </p>
+          <p><strong>Email:</strong> <a href="mailto:rumie.mou@gmail.com">rumie.mou@gmail.com</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sikdarmoushumi" target="_blank">linkedin.com/in/sikdarmoushumi</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/M-S8" target="_blank">github.com/M-S8</a></p>
+        </div>
+        <div class="contact-card">
+          <h3>Resume</h3>
+          <p>You can link your latest resume here for quick access.</p>
+          <a class="btn primary" href="#" aria-disabled="true">Download Resume (add link)</a>
+          <p class="hint">Replace this button link with your resume URL when ready.</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Moushumi Sikdar · Data Analyst Portfolio</p>
+    </div>
+  </footer>
 </body>
 </html>
