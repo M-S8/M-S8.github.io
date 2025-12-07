@@ -1,214 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Moushumi Sikdar – Data Analyst Portfolio</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Moushumi Sikdar – Senior Data Analyst Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="brand">
+        <div class="brand-mark">MS</div>
+        <span class="brand-text">Moushumi Sikdar</span>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-resume" href="https://raw.githubusercontent.com/M-S8/M-S8.github.io/main/Moushumi_Sikdar_resume_eu1.pdf" target="_blank">
+          Resume
+        </a>
+      </nav>
+    </div>
+  </header>
 
-<!-- NAVBAR -->
-<header class="site-header">
-  <div class="container nav-container">
-    <div class="logo">MS</div>
-    <nav class="nav">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-      <a class="nav-resume" href="https://raw.githubusercontent.com/M-S8/M-S8.github.io/main/Moushumi_Sikdar_resume_eu1.pdf" target="_blank">Resume</a>
-    </nav>
-  </div>
-</header>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="container hero-inner">
-    <div class="hero-text-block">
-      <p class="overline">Analytics • Machine Learning • Data Storytelling</p>
-      <h1>Hi, I’m <span class="accent">Moushumi Sikdar</span></h1>
-      <p class="tagline">Data Analyst | Python • SQL • Snowflake • Machine Learning</p>
-      <p class="hero-text">
-        I uncover stories hidden in complex datasets—stories about customers, performance, and revenue.
-        With 4 years of experience, I combine statistical rigor with clear communication so teams can make confident data-informed decisions.
-      </p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn primary">View Projects</a>
-        <a href="https://raw.githubusercontent.com/M-S8/M-S8.github.io/main/Moushumi_Sikdar_resume_eu1.pdf" target="_blank" class="btn ghost">Download Resume</a>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-left">
+        <p class="overline">Analytics • Machine Learning • Data Storytelling</p>
+        <h1>Senior Data Analyst turning complex data into clear decisions.</h1>
+        <p class="hero-subtitle">
+          I’m <span class="accent">Moushumi Sikdar</span>, a Senior Data Analyst with 4 years of experience
+          using Python, SQL, Snowflake and statistical modelling to uncover patterns in revenue, customer behaviour,
+          and operational performance.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="https://raw.githubusercontent.com/M-S8/M-S8.github.io/main/Moushumi_Sikdar_resume_eu1.pdf"
+             target="_blank" class="btn btn-outline">Download Resume</a>
+        </div>
+        <div class="hero-badges">
+          <div class="badge">Python</div>
+          <div class="badge">SQL</div>
+          <div class="badge">Snowflake</div>
+          <div class="badge">Machine Learning</div>
+          <div class="badge">Data Storytelling</div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ABOUT -->
-<section id="about" class="section">
-  <div class="container">
-    <h2>About Me</h2>
-    <p>
-      I am a data analyst with 4 years of experience working across multi-regional datasets, 
-      building ETL workflows, and developing statistical models to explain real business behaviour. 
-      I focus on answering questions such as: Where is revenue leaking? When do customers churn? 
-      And how do we measure performance fairly when data is noisy?
-    </p>
-    <p>
-      My work blends analytics, statistical modeling, and business understanding to uncover 
-      insights that help teams take action with confidence.
-    </p>
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="section section-alt">
-  <div class="container">
-    <h2>Skills</h2>
-
-    <div class="skills-grid">
-      <div class="skill-card">
-        <div class="icon-circle">Py</div>
-        <h3>Python</h3>
-        <p>Pandas, NumPy, Scikit-learn, Jupyter</p>
+  <main>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container narrow">
+        <h2>About Me</h2>
+        <p>
+          I specialise in building analytics that answer practical questions: 
+          Where is revenue leaking? When do customers leave? How do we evaluate performance fairly
+          when workloads and opportunities differ?
+        </p>
+        <p>
+          My work sits at the intersection of data engineering and applied statistics. I design
+          repeatable pipelines in Python and SQL, build models in areas like survival analysis
+          and Bayesian inference, and translate results into simple, honest stories that business
+          partners can use to act with confidence.
+        </p>
       </div>
+    </section>
 
-      <div class="skill-card">
-        <div class="icon-circle">SQL</div>
-        <h3>SQL</h3>
-        <p>Analytical queries, optimisation, window functions</p>
+    <!-- SKILLS -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2>Core Skills</h2>
+
+        <div class="skills-row">
+          <div class="skill-pill">
+            <div class="icon-circle">Py</div>
+            <div>
+              <h3>Python</h3>
+              <p>Pandas, NumPy, Scikit-learn, Jupyter</p>
+            </div>
+          </div>
+
+          <div class="skill-pill">
+            <div class="icon-circle">SQL</div>
+            <div>
+              <h3>SQL</h3>
+              <p>Analytical queries, window functions, optimisation</p>
+            </div>
+          </div>
+
+          <div class="skill-pill">
+            <div class="icon-circle">SN</div>
+            <div>
+              <h3>Snowflake</h3>
+              <p>ETL pipelines, stages, file formats, COPY INTO</p>
+            </div>
+          </div>
+
+          <div class="skill-pill">
+            <div class="icon-circle">ML</div>
+            <div>
+              <h3>Machine Learning</h3>
+              <p>Regression, clustering, survival analysis, Bayesian models</p>
+            </div>
+          </div>
+
+          <div class="skill-pill">
+            <div class="icon-circle">Viz</div>
+            <div>
+              <h3>Visualisation</h3>
+              <p>Tableau, Seaborn, Matplotlib</p>
+            </div>
+          </div>
+
+          <div class="skill-pill">
+            <div class="icon-circle">GH</div>
+            <div>
+              <h3>Collaboration</h3>
+              <p>Git/GitHub, documentation, remote teamwork</p>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="skill-card">
-        <div class="icon-circle">SN</div>
-        <h3>Snowflake</h3>
-        <p>ETL, stages, file formats, COPY INTO</p>
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Featured Projects</h2>
+        <p class="section-intro">
+          A selection of projects where I used data, statistics and engineering to answer real business questions
+          and communicate the story behind the numbers.
+        </p>
+
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-icon-circle">RA</div>
+            <div>
+              <h3>Revenue Anomaly Detection – Finding Hidden Signals</h3>
+              <p class="project-meta">Python · SQL · Statistical Analysis</p>
+            </div>
+          </div>
+          <p>
+            Revenue drops rarely happen “out of nowhere”. I built an automated monitoring system that scans weekly
+            revenue across 50+ regions and flags unusual dips early enough for teams to react.
+          </p>
+          <ul>
+            <li>Implemented IQR-based anomaly detection on regional revenue time series.</li>
+            <li>Replaced manual spreadsheet checks with a reproducible Python + SQL pipeline.</li>
+            <li>Produced clear summary tables and narratives that guided regional follow-up actions.</li>
+          </ul>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-icon-circle">CH</div>
+            <div>
+              <h3>Customer Churn Prediction – Understanding When Customers Leave</h3>
+              <p class="project-meta">Python · Survival Analysis</p>
+            </div>
+          </div>
+          <p>
+            Instead of treating churn as a simple yes/no prediction, I modelled it as a timeline. 
+            Survival analysis helped identify when churn risk peaks and which customer groups need proactive attention.
+          </p>
+          <ul>
+            <li>Built survival curves and hazard functions for multiple customer cohorts.</li>
+            <li>Surfaced high-risk periods to inform targeted retention strategies.</li>
+            <li>Focused on interpretability so non-technical stakeholders could see not just who churns, but <em>when</em> and <em>why</em>.</li>
+          </ul>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-icon-circle">BT</div>
+            <div>
+              <h3>Bayesian Technician Ranking – Fair Performance Evaluation</h3>
+              <p class="project-meta">Python · Bayesian Modelling</p>
+            </div>
+          </div>
+          <p>
+            Ranking technicians by performance is tricky when workloads and opportunities differ.
+            I used Bayesian hierarchical modelling to estimate “true performance” while showing the uncertainty behind each estimate.
+          </p>
+          <ul>
+            <li>Modelled technician and region-level variation using a hierarchical Bayesian framework.</li>
+            <li>Generated posterior distributions instead of single-point scores to capture uncertainty.</li>
+            <li>Provided leadership with a transparent and defendable ranking method for training and incentives.</li>
+          </ul>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-icon-circle">GS</div>
+            <div>
+              <h3>Geospatial Feasibility – Mapping Opportunity in Nice</h3>
+              <p class="project-meta">Python · Foursquare API · Clustering</p>
+            </div>
+          </div>
+          <p>
+            Cities tell stories through where businesses cluster. I analysed neighbourhoods in Nice, France,
+            to identify areas with attractive venue patterns for a new business concept.
+          </p>
+          <ul>
+            <li>Collected venue data using the Foursquare API for multiple neighbourhoods.</li>
+            <li>Clustered locations by venue mix and density to reveal distinct area profiles.</li>
+            <li>Used geospatial visualisation to highlight zones with strong opportunity signals.</li>
+          </ul>
+        </article>
       </div>
+    </section>
 
-      <div class="skill-card">
-        <div class="icon-circle">ML</div>
-        <h3>Machine Learning</h3>
-        <p>Regression, clustering, survival analysis, Bayesian modelling</p>
-      </div>
-
-      <div class="skill-card">
-        <div class="icon-circle">Viz</div>
-        <h3>Visualisation</h3>
-        <p>Tableau, Seaborn, Matplotlib</p>
-      </div>
-
-      <div class="skill-card">
-        <div class="icon-circle">GH</div>
-        <h3>Collaboration</h3>
-        <p>Git/GitHub, remote teamwork, documentation</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="section">
-  <div class="container">
-    <h2>Featured Projects</h2>
-    <p class="section-intro">
-      Selected work where I applied analytical thinking, statistical tools, and clear storytelling to solve real business problems.
-    </p>
-
-    <!-- Project 1 -->
-    <article class="project-card">
-      <h3>Revenue Anomaly Detection – Finding Hidden Signals</h3>
-      <p class="project-meta">Python • SQL • Statistical Analysis</p>
-      <p>
-        Revenue fluctuations often hide early warnings. I built an automated system that monitors revenue 
-        across 50+ regions and flags unusual dips before they escalate.
-      </p>
-      <ul>
-        <li>Automated IQR-based anomaly detection for weekly revenue.</li>
-        <li>Eliminated manual monitoring by creating a reproducible Python + SQL pipeline.</li>
-        <li>Enabled regional teams to respond faster using clear summaries and narratives.</li>
-      </ul>
-    </article>
-
-    <!-- Project 2 -->
-    <article class="project-card">
-      <h3>Customer Churn Prediction – Understanding When Customers Leave</h3>
-      <p class="project-meta">Python • Survival Analysis</p>
-      <p>
-        Instead of predicting churn as a binary event, I modelled it as a timeline. 
-        Survival analysis helped reveal when churn risk spikes and which customer groups require intervention.
-      </p>
-      <ul>
-        <li>Built survival curves and hazard functions for customer cohorts.</li>
-        <li>Identified high-risk periods for targeted retention.</li>
-        <li>Created interpretable outputs for non-technical stakeholders.</li>
-      </ul>
-    </article>
-
-    <!-- Project 3 -->
-    <article class="project-card">
-      <h3>Bayesian Technician Ranking – Fair Performance Evaluation</h3>
-      <p class="project-meta">Python • Bayesian Modelling</p>
-      <p>
-        Technician performance varies by workload, geography, and noise. 
-        I built a Bayesian hierarchical model that estimates “true” performance while accounting for uncertainty.
-      </p>
-      <ul>
-        <li>Designed a hierarchical Bayesian model capturing technician & region variability.</li>
-        <li>Generated posterior distributions to rank fairly with uncertainty bands.</li>
-        <li>Provided leadership with a transparent and defensible ranking method.</li>
-      </ul>
-    </article>
-
-    <!-- Project 4 -->
-    <article class="project-card">
-      <h3>Geospatial Feasibility – Mapping Opportunity in Nice</h3>
-      <p class="project-meta">Python • Foursquare API • Clustering</p>
-      <p>
-        I analysed venue distributions across Nice, France, to identify high-opportunity neighbourhoods 
-        for a new business concept.
-      </p>
-      <ul>
-        <li>Collected venue data using the Foursquare API.</li>
-        <li>Clustered neighbourhoods by venue categories and density.</li>
-        <li>Mapped insights to highlight strategic business zones.</li>
-      </ul>
-    </article>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience" class="section section-alt">
-  <div class="container">
-    <h2>Experience</h2>
-    <div class="experience-card">
-      <h3>Data Analyst — Sears Home Services</h3>
-      <p class="project-meta">Analytics • Modelling • ETL</p>
-      <ul>
-        <li>Developed revenue analytics, churn modelling, and technician performance insights.</li>
-        <li>Built automated ETL workflows using Python + SQL on Snowflake.</li>
-        <li>Presented data stories to leadership and supported operational decisions.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section">
-  <div class="container">
-    <h2>Contact</h2>
-    <p>If my work resonates with you, I’d be happy to connect.</p>
-    <p><strong>Email:</strong> <a href="mailto:rumie.mou@gmail.com">rumie.mou@gmail.com</a></p>
-    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sikdarmoushumi" target="_blank">linkedin.com/in/sikdarmoushumi</a></p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/M-S8" target="_blank">github.com/M-S8</a></p>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="site-footer">
-  <div class="container">
-    <p>© 2025 Moushumi Sikdar — Data Storytelling Portfolio</p>
-  </div>
-</footer>
-
-</body>
-</html>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="experience-card">
+          <h3>Senior Data Analyst — Sears Home Services</h3>
+          <p class="project-meta">Analytics · Modelling · ETL</p>
+          <ul>
+            <li>Designed analytics for revenue monitoring, technician performance, and customer behaviour.</li>
+            <li>Built automated ETL pipelines in Python and SQL on Snowflake.</li>
+            <li>Presented data stor
