@@ -135,4 +135,214 @@ a:hover{
 }
 
 .btn{
-  display:inli
+  display:inline-block;
+  padding:0.7rem 1.4rem;
+  border-radius:999px;
+  font-size:0.9rem;
+  font-weight:500;
+  border:1px solid transparent;
+  margin-right:0.7rem;
+}
+
+.btn-primary{
+  background:#f9fafb;
+  color:#0f172a;
+}
+
+.btn-outline{
+  background:transparent;
+  color:#e5e7eb;
+  border-color:#e5e7eb;
+}
+
+.hero-badges{
+  display:flex;
+  flex-wrap:wrap;
+  gap:0.4rem;
+}
+
+.badge{
+  padding:0.3rem 0.8rem;
+  border-radius:999px;
+  background:rgba(15,23,42,0.7);
+  border:1px solid rgba(148,163,184,0.7);
+  font-size:0.75rem;
+}
+
+/* SECTIONS */
+
+.section{
+  padding:3.2rem 0;
+}
+
+.section-alt{
+  background:#e5e7f5;
+}
+
+.section h2{
+  font-size:1.6rem;
+  margin-bottom:1rem;
+}
+
+.narrow{
+  max-width:760px;
+}
+
+.section-intro{
+  max-width:680px;
+  margin-bottom:1.6rem;
+  color:#4b5563;
+}
+
+/* SKILLS */
+
+.skills-row{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:1rem;
+}
+
+.skill-pill{
+  display:flex;
+  align-items:flex-start;
+  gap:0.8rem;
+  background:#ffffff;
+  padding:0.9rem 1rem;
+  border-radius:999px;
+  box-shadow:0 10px 25px rgba(15,23,42,0.08);
+}
+
+.skill-pill h3{
+  margin:0 0 0.2rem;
+  font-size:0.95rem;
+}
+
+.skill-pill p{
+  margin:0;
+  font-size:0.83rem;
+  color:#4b5563;
+}
+
+.icon-circle{
+  width:32px;
+  height:32px;
+  border-radius:999px;
+  border:1px solid #111827;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:0.78rem;
+  font-weight:500;
+}
+
+/* PROJECTS */
+
+.project-card{
+  background:#ffffff;
+  border-radius:1.1rem;
+  padding:1.4rem 1.5rem 1.3rem;
+  box-shadow:0 14px 32px rgba(15,23,42,0.1);
+  margin-bottom:1.5rem;
+}
+
+.project-header{
+  display:flex;
+  align-items:center;
+  gap:0.9rem;
+  margin-bottom:0.6rem;
+}
+
+.project-card h3{
+  margin:0 0 0.1rem;
+}
+
+.project-meta{
+  font-size:0.77rem;
+  text-transform:uppercase;
+  letter-spacing:0.13em;
+  color:#6b7280;
+}
+
+.project-card p{
+  font-size:0.92rem;
+  margin:0.5rem 0 0.6rem;
+}
+
+.project-card ul{
+  margin:0;
+  padding-left:1.2rem;
+  font-size:0.9rem;
+}
+
+.project-card li{
+  margin-bottom:0.25rem;
+}
+
+.project-icon-circle{
+  width:36px;
+  height:36px;
+  border-radius:999px;
+  background:#0f172a;
+  color:#e5e7eb;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:0.78rem;
+  font-weight:600;
+}
+
+/* EXPERIENCE */
+
+.experience-card{
+  background:#ffffff;
+  border-radius:1rem;
+  padding:1.5rem 1.6rem;
+  box-shadow:0 10px 26px rgba(15,23,42,0.09);
+}
+
+.experience-card ul{
+  padding-left:1.2rem;
+  font-size:0.92rem;
+}
+
+.experience-card li{
+  margin-bottom:0.25rem;
+}
+
+/* CONTACT + FOOTER */
+
+.site-footer{
+  background:#020617;
+  color:#9ca3af;
+  padding:1.2rem 0;
+  font-size:0.85rem;
+  text-align:center;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:768px){
+  .nav{
+    display:none;  /* keep it simple on mobile, or you can later add burger menu */
+  }
+
+  .hero-inner{
+    display:block;
+  }
+
+  .hero{
+    text-align:left;
+  }
+
+  .hero h1{
+    font-size:1.9rem;
+  }
+
+  .skills-row{
+    grid-template-columns:1fr;
+  }
+
+  .skill-pill{
+    border-radius:0.85rem;
+  }
+}
